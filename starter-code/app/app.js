@@ -40,6 +40,7 @@
     // reset/clear the form fields
     $('#cat-name').val('Mr. Kittums');
     $('#cat-note').val('Tell us a bit about this cat');
+
   });  
     
 
