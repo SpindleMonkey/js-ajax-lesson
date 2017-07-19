@@ -1,3 +1,4 @@
+$(document).ready(function() {
   // Get the list of cats currently at the rescue, and list them on the web site, 
   // underneath the intake form
   var catList = $.get('https://ga-cat-rescue.herokuapp.com/api/cats')
@@ -9,10 +10,9 @@
 
       for (i = 0; i < catObjectList.length; i++) {
         $('#cats').append('<li>' + catObjectList[i].name + ' - <em>' + catObjectList[i].note + '</em></li>');
-      }
+     }
     });
     
-
 
   $("form").on("submit", function(event) {
 
@@ -41,11 +41,6 @@
     $('#cat-name').val('Mr. Kittums');
     $('#cat-note').val('Tell us a bit about this cat');
 
-  });  
-    
+  });
 
-
-
-
-
-
+});    
